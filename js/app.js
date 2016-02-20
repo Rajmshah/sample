@@ -19,6 +19,35 @@ firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         controller: 'HomeCtrl'
     })
 
+    .state('knowyou', {
+      url: "/about",
+      templateUrl: "views/template.html",
+      controller: 'StatsCtrl'
+    })
+    .state('kyss', {
+        url: "/knowyourstats",
+        templateUrl: "views/template.html",
+        controller: 'kyssCtrl'
+    })
+
+    .state('error', {
+        url: "/error",
+        templateUrl: "views/template.html",
+        controller: 'ErrorCtrl'
+    })
+
+    .state('thankyou', {
+        url: "/thankyou",
+        templateUrl: "views/template.html",
+        controller: 'TYCtrl'
+    })
+
+    .state('ohno', {
+        url: "/ohno",
+        templateUrl: "views/template.html",
+        controller: 'ONCtrl'
+    })
+
     $urlRouterProvider.otherwise("/home");
 
 });

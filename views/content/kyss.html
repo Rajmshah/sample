@@ -1,0 +1,139 @@
+<div class="container">
+  <div class="kyss-accordion">
+    <uib-accordion close-others="oneAtATime" is-open="status.open">
+      <uib-accordion-group is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+        <uib-accordion-heading>
+          CALORIE METER<i class="open-me fa" ng-class="{'fa-minus': status.isFirstOpen, 'fa-plus': !status.isFirstOpen}"></i>
+        </uib-accordion-heading>
+        <div class="recipe-descp">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="col-md-6 padd">
+                <span class="Tadjust">CHOOSE A FOOD GROUP :</span>
+              </div>
+              <div class="col-md-6">
+                <select class="food">
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-5 padd">
+              <div class="col-md-6 padd1">
+                <span class="Tadjust1">PICK A PRODUCT :</span>
+              </div>
+              <div class="col-md-6">
+                <select class="pro">
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2 padd2">
+              <a style="text-decoration:none">Go</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 padd3">
+              <div><span class="btext">
+                RESULTS<i>(for Lorem Ipsum product)</i>
+              </span>
+              </div>
+              <div class="padd4">
+                <span><input class="itext"type="text" value="1"></span>
+                <span class="padd5"> x </span><span class="padd6">1 biscuit = 9 gm</span>
+                <a style="text-decoration:none">Go</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 padd3">
+              <div class="cvalue inl">44</div>
+              <div class="inl kcal vtop">
+                <span class="block">Calorie</span>
+                <span class="block">kcal</span>
+              </div>
+              <div class="inl  kcal1 vtop">
+                <span class="block">Protein (gms)</span>
+                <span class="block">Fat (gms)</span>
+                <span class="block">Carbs (gms)</span>
+              </div>
+              <div class="inl kcal2 vtop">
+                <span class="block">0.7</span>
+                <span class="block">2.1</span>
+                <span class="block">6</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mar">
+            <p class="btext">
+              HOW TO BURN 44 CALORIES<i>(to burn 44 calories, you could do any of the following)</i>
+            </p>
+            <div>
+            <div>
+              <span class="inl ctime">8 mins</span>
+              <img  class="inl pma" style="padding-left:11px" src="img/Walk.png" alt="" class="img-responsive">
+              <span class="inl ctext">Walking</span>
+            </div>
+            <div>
+              <span  class="inl ctime">3 mins</span>
+              <img  class="inl pma" src="img/run.png" alt="" class="img-responsive">
+              <span class="inl ctext">Running</span>
+            </div>
+            <div>
+              <span class="inl ctime">6 mins</span>
+              <img class="inl pma" src="img/swim.png" alt="" class="img-responsive">
+              <span class="inl ctext">Swimming</span>
+            </div>
+            <div style="margin-top:5px">
+              <span class="inl ctime">4 mins</span>
+              <img class="inl pma" src="img/cycle.png" alt="" class="img-responsive">
+              <span class="inl ctext">Cycling</span>
+            </div>
+          </div>
+        </div>
+          </div>
+      </uib-accordion-group>
+      <uib-accordion-group is-open="status.open2">
+        <uib-accordion-heading>
+          BMI CALCULATOR<i class="open-me fa" ng-class="{'fa-minus': status.open2, 'fa-plus': !status.open2}"></i>
+        </uib-accordion-heading>
+        <div class="kyssbmi-descp">
+          <div class="inl">
+            <span class="text-uppercase">Sex:</span>
+            <button type="button" class="text-uppercase">Male&nbsp;<img src="img/male.png" alt=""></buttton>
+              <button type="button" class="text-uppercase mar1">Female&nbsp;<img src="img/female.png" alt=""></button>
+          </div>
+          <div>
+          <div class="inl padd7">
+            <span class="text-uppercase">Age:</span>  <input type="number" class="age" />
+          </div>
+        </div>
+        <div>
+          <div class="inl paddl">
+            <span class="text-uppercase">Height:</span>
+            <select class="padd8">
+              <option>FEET</option>
+            </select>
+            <select class="padd0">
+              <option>FT</option>
+            </select>
+            <select class="padd0 padd10">
+              <option>INC</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <div class="inl paddt">
+            <span class="text-uppercase">Weight:</span>
+            <input type="number" class="weight" />
+            <select class="wborder">
+              <option>KGS</option>
+            </select>
+          </div>
+          </div>
+          <div><button type="button" class="text-uppercase but">Calculate BMI</button></div>
+        </div>
+      </uib-accordion-group>
+    </uib-accordion>
+    </div>
+  </div>

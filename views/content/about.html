@@ -1,0 +1,155 @@
+<section>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10">
+        <div class="calorie-meter">
+          <uib-accordion close-others="oneAtATime" is-open="status.open">
+            <uib-accordion-group is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+              <uib-accordion-heading> Calorie Meter<i class="open-me fa" ng-class="{'fa-minus': status.isFirstOpen, 'fa-plus': !status.isFirstOpen}"></i>
+              </uib-accordion-heading>
+              <div class="calorie-detail">
+                <div class="choose-prd">
+                  <div class="row">
+                    <div class="col-md-5 col-sm-5">
+                      <div class="text-center">
+                        <span class="text-uppercase inline-block">Choose a food group :</span>
+                        <select class="">
+                          <option></option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                      <div class="text-center">
+                        <span class="text-uppercase inline-block">Pick a product :</span>
+                        <select class="">
+                          <option></option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                      <div class="text-center">
+                        <a href="" class="text-uppercase white brand-primary-bg calorie-btn">Go</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result">
+                  <div class="row">
+                    <div class="col-md-5">
+                        <p class="burn">
+                          <span class="text-uppercase">Results</span>
+                          <i class="brand-primary">(for Lorem Ipsum product)</i>
+                        </p>
+                        <input class="result-number" type="text" placeholder="1">
+                        <span class="multiply"> x </span>
+                        <span>1 biscuit = 9 gm</span>
+                        <a href="" class="text-uppercase white brand-primary-bg calorie-btn">Go</a>
+                    </div>
+
+                    <div class="col-md-7">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="calorie">
+                            <div class="calorie-number white brand-primary-bg inline-block">44</div>
+                            <div class="inline-block kcal v-top">
+                              <span class="block brand-primary">Calorie</span>
+                              <span class="block brand-primary">kcal</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                          <div class="nutrients inline-block">
+                            <span class="block">Protein (gms)</span>
+                            <span class="block">Fat (gms)</span>
+                            <span class="block">Carbs (gms)</span>
+                          </div>
+                        </div>
+                        <div class="col-md-offset-1 col-md-3 col-sm-6 col-xs-6">
+                          <div class="nutrients-numbers inline-block text-right">
+                            <span class="block">0.7</span>
+                            <span class="block">2.1</span>
+                            <span class="block">6</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div class="calorie-count">
+                    <p class="burn">
+                      <span class="text-uppercase">How to burn 44 calories</span>
+                      <i class="brand-primary">(to burn 44 calories, you could do any of the following)</i>
+                    </p>
+                    <div class="walking count-cat">
+                      <span class="white brand-primary-bg calorie-btn">8 mins</span>
+                      <img src="img/stats/walking.png" alt="" class="img-responsive inline-block">
+                      <span class="brand-brown-dark2">Walking</span>
+                    </div>
+                    <div class="running count-cat">
+                      <span class="white brand-primary-bg calorie-btn">3 mins</span>
+                      <img src="img/stats/running.png" alt="" class="img-responsive inline-block">
+                      <span class="brand-brown-dark2">Running</span>
+                    </div>
+                    <div class="swimming count-cat">
+                      <span class="white brand-primary-bg calorie-btn">6 mins</span>
+                      <img src="img/stats/swimming.png" alt="" class="img-responsive inline-block">
+                      <span class="brand-brown-dark2">Swimming</span>
+                    </div>
+                    <div class="cycling count-cat">
+                      <span class="white brand-primary-bg calorie-btn">4 mins</span>
+                      <img src="img/stats/cycling.png" alt="" class="img-responsive inline-block">
+                      <span class="brand-brown-dark2">Cycling</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </uib-accordion-group>
+            <uib-accordion-group is-open="status.open2">
+              <uib-accordion-heading>
+                Bmi Calculator<i class="open-me fa" ng-class="{'fa-minus': status.open2, 'fa-plus': !status.open2}"></i>
+              </uib-accordion-heading>
+              <div class="bmi-detail">
+                <div class="bmi-cal">
+                  <span class="text-uppercase bmi-heading inline-block">Sex:</span>
+                  <a class="male gender text-uppercase inline-block">Male <img src="img/stats/male.png" alt="" class="img-responsive inline-block"></a>
+                  <a class="female gender text-uppercase inline-block">Female <img src="img/stats/female.png" alt="" class="img-responsive inline-block"></a>
+                </div>
+
+                <div class="bmi-cal">
+                  <span class="text-uppercase bmi-heading inline-block">Age:</span>
+                  <input type="number" class="age" />
+                </div>
+
+                <div class="bmi-cal">
+                  <span class="text-uppercase bmi-heading inline-block">Height:</span>
+                  <select class="feet text-uppercase">
+                    <option>feet</option>
+                  </select>
+                  <select class="ft text-uppercase">
+                    <option>ft</option>
+                  </select>
+                  <select class="inc text-uppercase">
+                    <option>inc</option>
+                  </select>
+                </div>
+
+                <div class="bmi-cal">
+                  <span class="text-uppercase bmi-heading inline-block">Weight:</span>
+                  <input type="number" class="weight" />
+                  <select class="kgs text-uppercase">
+                    <option>kgs</option>
+                  </select>
+                </div>
+                <div class="bmi-cal">
+                  <a href="" class="btn btn-primary text-uppercase no-radius calorie-btn">calculate bmi</a>
+                </div>
+              </div>
+            </uib-accordion-group>
+          </uib-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
