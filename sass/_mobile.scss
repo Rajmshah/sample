@@ -1,10 +1,5 @@
 @media (max-width: 1200px) {
-  .recipe-descp {
-    .kcal1 {
-      margin: 3px 64px 29px 32px;
-    }
+  .recipe-descp .kcal1{
+    margin:3px 64px 29px 32px;
   }
 }
-@media (max-width: $screen-sm-max) {}
-@media (max-width: $screen-xs-max) {}
-@media (max-width: 480px) {}
